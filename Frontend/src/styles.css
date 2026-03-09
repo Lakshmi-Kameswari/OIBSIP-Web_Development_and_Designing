@@ -1,1 +1,45 @@
+body{
+background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+font-family: Arial;
+}
 
+.app{
+text-align:center;
+margin-top:60px;
+}
+
+.card{
+
+background:white;
+padding:30px;
+width:300px;
+margin:auto;
+border-radius:10px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+input{
+display:block;
+width:100%;
+padding:10px;
+margin:10px 0;
+border-radius:5px;
+border:1px solid #ddd;
+}
+
+button{
+
+background:#ff4757;
+color:white;
+padding:10px;
+border:none;
+width:100%;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+button:hover{
+background:#ff6b81;
+}
