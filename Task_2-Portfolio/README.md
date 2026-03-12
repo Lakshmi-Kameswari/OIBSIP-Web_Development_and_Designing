@@ -1,4 +1,4 @@
-# 🌐 K. Lakshmi Kameswari – Developer Portfolio
+# 🌐 Developer Portfolio
 
 ## 📌 Project Overview
 
