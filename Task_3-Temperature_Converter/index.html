@@ -1,0 +1,68 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Temperature Converter </title>
+
+<meta name="description" content="A simple and interactive temperature converter that converts Celsius, Fahrenheit, and Kelvin values. Developed by K. Lakshmi Kameswari.">
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🌡 Temperature Converter</h1>
+
+<p class="subtitle">Convert temperatures between Celsius, Fahrenheit, and Kelvin</p>
+
+<div class="input-group">
+
+<input type="number" id="temperature" placeholder="Enter temperature">
+
+<select id="unit">
+
+<option value="celsius">Celsius (°C)</option>
+<option value="fahrenheit">Fahrenheit (°F)</option>
+<option value="kelvin">Kelvin (K)</option>
+
+</select>
+
+</div>
+
+<div class="buttons">
+
+<button onclick="convertTemp()">Convert</button>
+
+<button onclick="resetFields()" class="reset">Reset</button>
+
+</div>
+
+<div class="result" id="result"></div>
+
+<button class="toggle" onclick="toggleMode()">🌙 Toggle Dark Mode</button>
+
+</div>
+
+<footer>
+
+<p>© 2026 K. Lakshmi Kameswari | Web Development Project</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+```
