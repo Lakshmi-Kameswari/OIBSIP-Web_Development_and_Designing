@@ -33,7 +33,7 @@ z-index:1000;
 .logo{
 font-size:24px;
 font-weight:700;
-background:linear-gradient(45deg,#ffd700,#ff3c3c);
+background:linear-gradient(45deg,#ffd700,#141414);
 -webkit-background-clip:text;
 color:transparent;
 }
@@ -59,7 +59,7 @@ width:0%;
 height:2px;
 left:0;
 bottom:-6px;
-background:linear-gradient(45deg,#ffd700,#ff3c3c);
+background:linear-gradient(120deg,#ffd700,#ff3c3c);
 transition:0.3s;
 }
 
@@ -91,7 +91,7 @@ margin-bottom:20px;
 }
 
 .hero-text span{
-background:linear-gradient(45deg,#ffd700,#ff3c3c);
+background:linear-gradient(120deg,#ffd700,#ff3c3c);
 -webkit-background-clip:text;
 color:transparent;
 }
