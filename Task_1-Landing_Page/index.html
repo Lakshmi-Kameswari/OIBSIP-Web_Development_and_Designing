@@ -1,1 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>InnovateX - Digital Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f7f9fc;
+color:#333;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#4f46e5;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#4f46e5;
+}
+
+.menu-btn{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:linear-gradient(120deg,#4f46e5,#9333ea);
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:15px;
+animation:fadeIn 1.5s ease;
+}
+
+.hero p{
+margin-bottom:30px;
+font-size:18px;
+}
+
+.btn{
+padding:12px 28px;
+border:none;
+border-radius:25px;
+background:white;
+color:#4f46e5;
+font-weight:600;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* SERVICES */
+
+.services{
+padding:80px 10%;
+text-align:center;
+}
+
+.services h2{
+font-size:32px;
+margin-bottom:40px;
+}
+
+.service-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#4f46e5;
+}
+
+/* ABOUT */
+
+.about{
+padding:80px 10%;
+text-align:center;
+background:#eef2ff;
+}
+
+.about h2{
+font-size:30px;
+margin-bottom:20px;
+}
+
+/* CONTACT */
+
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:12px;
+border-radius:6px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+textarea{
+resize:none;
+height:120px;
+}
+
+#formMessage{
+margin-top:10px;
+font-weight:500;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* BACK TO TOP */
+
+#topBtn{
+position:fixed;
+bottom:30px;
+right:30px;
+padding:10px 14px;
+border:none;
+border-radius:50%;
+background:#4f46e5;
+color:white;
+cursor:pointer;
+display:none;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+from{opacity:0; transform:translateY(20px);}
+to{opacity:1; transform:translateY(0);}
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.nav-links{
+position:absolute;
+top:70px;
+right:0;
+background:white;
+width:200px;
+flex-direction:column;
+align-items:center;
+display:none;
+padding:20px;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.nav-links.show{
+display:flex;
+}
+
+.menu-btn{
+display:block;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">InnovateX</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Build Modern Websites With Confidence</h1>
+
+<p>We design fast, responsive and professional digital solutions.</p>
+
+<button class="btn" onclick="scrollToServices()">Get Started</button>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h2>Our Services</h2>
+
+<div class="service-container">
+
+<div class="card">
+<h3>Web Design</h3>
+<p>Creative UI/UX design with modern layouts.</p>
+</div>
+
+<div class="card">
+<h3>Web Development</h3>
+<p>High performance responsive websites.</p>
+</div>
+
+<div class="card">
+<h3>SEO Optimization</h3>
+<p>Improve Google ranking and visibility.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<h2>Why Choose InnovateX?</h2>
+
+<p>We combine modern technology, clean design and fast performance to build powerful digital products.</p>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Your Name" required>
+
+<input type="email" id="email" placeholder="Your Email" required>
+
+<textarea id="message" placeholder="Your Message"></textarea>
+
+<button type="submit" class="btn">Send Message</button>
+
+</form>
+
+<p id="formMessage"></p>
+
+</section>
+
+<footer>
+
+<p>© 2026 InnovateX. All Rights Reserved.</p>
+
+</footer>
+
+<button id="topBtn">↑</button>
+
+<script>
+
+/* MOBILE MENU */
+
+function toggleMenu(){
+document.getElementById("navLinks").classList.toggle("show");
+}
+
+/* GET STARTED SCROLL */
+
+function scrollToServices(){
+document.getElementById("services").scrollIntoView({
+behavior:"smooth"
+});
+}
+
+/* CONTACT FORM */
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+let name=document.getElementById("name").value.trim();
+let email=document.getElementById("email").value.trim();
+let message=document.getElementById("message").value.trim();
+let output=document.getElementById("formMessage");
+
+if(name===""||email===""||message===""){
+output.style.color="red";
+output.innerText="Please fill all fields.";
+return;
+}
+
+if(!email.includes("@")){
+output.style.color="red";
+output.innerText="Enter a valid email.";
+return;
+}
+
+output.style.color="green";
+output.innerText="Message sent successfully!";
+
+this.reset();
+
+});
+
+/* BACK TO TOP BUTTON */
+
+let btn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.body.scrollTop>300 || document.documentElement.scrollTop>300){
+btn.style.display="block";
+}else{
+btn.style.display="none";
+}
+
+};
+
+btn.onclick=function(){
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+};
+
+</script>
+
+</body>
+</html>
