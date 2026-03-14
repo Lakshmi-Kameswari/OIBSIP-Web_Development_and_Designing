@@ -89,9 +89,13 @@ Possible enhancements for the project include:
 * Animations and scroll effects
 * Deployment on a hosting platform
 ---
+
+
 ## 🖥 Screenshot
 
-<img width="421" height="513" alt="Landing Page" src="C:\248x1a42i9\Screenshots\Landing.png" />
+<p align="center">
+  <img src="images/screenshot.png" width="600">
+</p>
 ---
 
 ## 👨‍💻 Author
