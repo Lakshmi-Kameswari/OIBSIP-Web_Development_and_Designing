@@ -1,4 +1,4 @@
-// -------------------- TYPING ANIMATION --------------------
+// TYPING ANIMATION
 
 const roles = [
 "Frontend Developer",
@@ -55,7 +55,7 @@ setTimeout(typeEffect,500);
 });
 
 
-// -------------------- COUNTER ANIMATION --------------------
+// COUNTER
 
 function animateCounter(id,target){
 
@@ -75,9 +75,6 @@ clearInterval(interval);
 },40);
 
 }
-
-
-// Trigger counters when section visible
 
 const observer = new IntersectionObserver((entries)=>{
 
@@ -100,8 +97,7 @@ observer.disconnect();
 observer.observe(document.querySelector(".stats"));
 
 
-
-// -------------------- SMOOTH SCROLL --------------------
+// SMOOTH SCROLL
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
 
@@ -118,8 +114,7 @@ behavior:"smooth"
 });
 
 
-
-// -------------------- SCROLL TO TOP BUTTON --------------------
+// SCROLL TO TOP
 
 const topBtn = document.getElementById("topBtn");
 
@@ -133,18 +128,15 @@ topBtn.style.display="none";
 
 });
 
-if(topBtn){
 topBtn.addEventListener("click",()=>{
 window.scrollTo({
 top:0,
 behavior:"smooth"
 });
 });
-}
 
 
-
-// -------------------- NAVBAR COLOR CHANGE --------------------
+// NAVBAR CHANGE
 
 const header = document.querySelector("header");
 
@@ -159,8 +151,7 @@ header.style.background = "rgba(0,0,0,0.85)";
 });
 
 
-
-// -------------------- SCROLL REVEAL ANIMATION --------------------
+// SCROLL REVEAL
 
 const revealElements = document.querySelectorAll("section");
 
