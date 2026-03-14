@@ -35,15 +35,18 @@ CSS3 – Styling and layout
 JavaScript – Temperature conversion logic and interactivity
 
 Google Fonts (Poppins) – Modern typography
-'''
+
+
 ## 📂 Project Structure
+```
 Temperature-Converter
 │
 ├── index.html      # Main webpage
 ├── style.css       # Styling file
 ├── script.js       # Conversion logic
 └── README.md       # Project documentation
-'''
+
+```
 ## ⚙️ How to Run the Project
 
 Download or clone the repository.
