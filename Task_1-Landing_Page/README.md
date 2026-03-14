@@ -91,7 +91,7 @@ Possible enhancements for the project include:
 ---
 ## 🖥 Screenshot
 
-<img width="421" height="513" alt="Landing Page" src="blob:https://web.whatsapp.com/e169d48f-6564-4333-a64d-492342654452" />
+<img width="421" height="513" alt="Landing Page" src=""C:\248x1a42i9\Screenshots\Landing.png"" />
 ---
 
 ## 👨‍💻 Author
