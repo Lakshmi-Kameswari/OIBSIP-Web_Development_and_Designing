@@ -11,7 +11,7 @@ scroll-behavior:smooth;
 }
 
 body{
-background:linear-gradient(120deg,#0f0f0f,#141414);
+background:linear-gradient(120deg,#0f0f0f,#151525);
 color:#ffffff;
 }
 
@@ -24,7 +24,7 @@ align-items:center;
 padding:18px 8%;
 position:fixed;
 width:100%;
-background:rgba(10,10,10,0.85);
+background:rgba(10,10,15,0.85);
 backdrop-filter:blur(10px);
 border-bottom:1px solid #222;
 z-index:1000;
@@ -33,10 +33,12 @@ z-index:1000;
 .logo{
 font-size:24px;
 font-weight:700;
-background:linear-gradient(45deg,#ffd700,#141414);
+background:linear-gradient(45deg,#ff4fd8,#4fa3ff);
 -webkit-background-clip:text;
 color:transparent;
 }
+
+/* NAV */
 
 nav ul{
 display:flex;
@@ -59,7 +61,7 @@ width:0%;
 height:2px;
 left:0;
 bottom:-6px;
-background:linear-gradient(120deg,#ffd700,#ff3c3c);
+background:linear-gradient(120deg,#ff4fd8,#4fa3ff);
 transition:0.3s;
 }
 
@@ -91,7 +93,7 @@ margin-bottom:20px;
 }
 
 .hero-text span{
-background:linear-gradient(120deg,#ffd700,#ff3c3c);
+background:linear-gradient(120deg,#ff4fd8,#4fa3ff);
 -webkit-background-clip:text;
 color:transparent;
 }
@@ -107,18 +109,19 @@ line-height:1.6;
 .btn{
 display:inline-block;
 padding:13px 30px;
-background:linear-gradient(45deg,#ffd700,#ff3c3c);
+background:linear-gradient(45deg,#ff4fd8,#4fa3ff);
 color:#000;
 font-weight:600;
 border-radius:30px;
 text-decoration:none;
 transition:0.3s;
-box-shadow:0 5px 20px rgba(255,0,0,0.3);
+box-shadow:0 5px 20px rgba(255,79,216,0.3);
+margin-right:10px;
 }
 
 .btn:hover{
 transform:translateY(-3px) scale(1.05);
-box-shadow:0 10px 30px rgba(255,0,0,0.5);
+box-shadow:0 10px 30px rgba(79,163,255,0.5);
 }
 
 /* HERO IMAGE */
@@ -127,8 +130,8 @@ box-shadow:0 10px 30px rgba(255,0,0,0.5);
 width:360px;
 border-radius:20px;
 box-shadow:
-0 0 20px rgba(255,0,0,0.4),
-0 0 40px rgba(255,215,0,0.2);
+0 0 20px rgba(255,79,216,0.4),
+0 0 40px rgba(79,163,255,0.3);
 transition:0.4s;
 }
 
@@ -145,7 +148,7 @@ padding:90px 8%;
 .section-title{
 font-size:36px;
 margin-bottom:40px;
-background:linear-gradient(45deg,#ffd700,#ff3c3c);
+background:linear-gradient(45deg,#ff4fd8,#4fa3ff);
 -webkit-background-clip:text;
 color:transparent;
 }
@@ -170,7 +173,7 @@ flex-wrap:wrap;
 flex:1;
 min-width:260px;
 padding:35px;
-background:linear-gradient(145deg,#141414,#1b1b1b);
+background:linear-gradient(145deg,#161623,#1e1e2c);
 border-radius:16px;
 border:1px solid #222;
 transition:0.35s;
@@ -178,12 +181,12 @@ transition:0.35s;
 
 .card:hover{
 transform:translateY(-12px);
-border:1px solid #ff3c3c;
-box-shadow:0 10px 40px rgba(255,0,0,0.15);
+border:1px solid #ff4fd8;
+box-shadow:0 10px 40px rgba(255,79,216,0.2);
 }
 
 .card h3{
-color:#ffd700;
+color:#4fa3ff;
 margin-bottom:12px;
 }
 
@@ -201,7 +204,7 @@ margin-top:35px;
 
 .stat h2{
 font-size:44px;
-background:linear-gradient(45deg,#ff3c3c,#ffd700);
+background:linear-gradient(45deg,#ff4fd8,#4fa3ff);
 -webkit-background-clip:text;
 color:transparent;
 }
@@ -218,7 +221,7 @@ flex-wrap:wrap;
 flex:1;
 min-width:260px;
 padding:30px;
-background:linear-gradient(145deg,#141414,#1c1c1c);
+background:linear-gradient(145deg,#161623,#1e1e2c);
 border-radius:16px;
 transition:0.35s;
 border:1px solid #222;
@@ -226,17 +229,17 @@ border:1px solid #222;
 
 .project:hover{
 transform:scale(1.06);
-border:1px solid #ffd700;
-box-shadow:0 10px 40px rgba(255,215,0,0.15);
+border:1px solid #4fa3ff;
+box-shadow:0 10px 40px rgba(79,163,255,0.2);
 }
 
 .project h3{
-color:#ffd700;
+color:#4fa3ff;
 margin-bottom:12px;
 }
 
 .project a{
-color:#ff3c3c;
+color:#ff4fd8;
 text-decoration:none;
 font-weight:500;
 }
@@ -246,24 +249,49 @@ font-weight:500;
 .contact a{
 display:block;
 margin-bottom:12px;
-color:#ffd700;
+color:#4fa3ff;
 text-decoration:none;
 transition:0.3s;
 }
 
 .contact a:hover{
-color:#ff3c3c;
+color:#ff4fd8;
 }
 
 /* FOOTER */
 
 footer{
-background:#080808;
+background:#080810;
 text-align:center;
 padding:22px;
 color:#777;
 font-size:14px;
 border-top:1px solid #222;
+}
+
+/* SCROLL TOP */
+
+#topBtn{
+position:fixed;
+bottom:30px;
+right:30px;
+padding:10px 15px;
+font-size:18px;
+border:none;
+border-radius:50%;
+background:linear-gradient(45deg,#ff4fd8,#4fa3ff);
+cursor:pointer;
+display:none;
+}
+
+/* THEME BUTTON */
+
+#themeToggle{
+background:none;
+border:none;
+color:white;
+font-size:18px;
+cursor:pointer;
 }
 
 /* RESPONSIVE */
