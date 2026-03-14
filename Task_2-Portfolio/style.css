@@ -30,12 +30,21 @@ border-bottom:1px solid #222;
 z-index:1000;
 }
 
+/* LOGO FIX */
+
 .logo{
 font-size:24px;
 font-weight:700;
-background:linear-gradient(45deg,#ff4fd8,#4fa3ff);
+
+/* fallback color */
+color:#ff4fd8;
+
+/* gradient text */
+background:linear-gradient(90deg,#ff4fd8,#7ab8ff);
+background-size:100%;
 -webkit-background-clip:text;
-color:transparent;
+background-clip:text;
+-webkit-text-fill-color:transparent;
 }
 
 /* NAV */
